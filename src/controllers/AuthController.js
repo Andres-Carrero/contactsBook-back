@@ -73,17 +73,17 @@ const findData = async (req, res) => {
 
 }
 
-const refresh = async (req, res) => {
-    
-}
 
 const logout = async (req, res) => {
-
+    return res.status(200).send({
+        res: true,
+        message: 'Cierre de Sesión',
+        //data: userFound
+    });
 }
 
 export default {
     login,
-    refresh,
     logout,
     findData
 }
