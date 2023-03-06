@@ -1,0 +1,16 @@
+
+User
+    'admin@Carvajal.com'
+    'Carvajal.2023'
+
+Crear Migraciones
+    npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
+
+Ejecutar Migraciones
+    npx sequelize-cli db:migrate
+
+Crear Seed
+    npx sequelize-cli seed:generate --name demo-user
+
+Ejecutar Seed
+    npx sequelize-cli db:seed:all
